@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Classification</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="jumbotron bg-primary">Image Classfication</h1>
+  <br><br>
+        <div class="custom_heading-container">
+          <h3 class=" ">
+              Your Prediction
+            </h3>
+          </div>
+          
+              <p class="text-dark"> The result is: </p>
+              <div class="upload">
+                <h3>Uploaded Image:</h3>
+             <div class="first">
+               {% if img_src %}
+               <img src="{{ img_src }}">
+                 {% endif %}
+             </div>
+            </div>
+              <br>
+            
+              <p class="text-dark"> For the given input image the Skin Cancer Type is : 
+                <span style="font-weight: 700;">{{pred_output}}</span>
+              </p>
+
+                <br />
+                <br />
+                <a href="/"><button class="button mt-3">Try again?</button></a>
+              </div>
+            </div>
+            
+        
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
+
